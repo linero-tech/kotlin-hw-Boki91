@@ -2,5 +2,11 @@ package lms_127
 
 fun task1() {
 
-    TODO("Erase this line and write your solution")
+    val country = "Serbia"
+    val capital = "Belgrade"
+    val currency = "RSD"
+
+    println("Country: $country")
+    println("Capital: $capital")
+    println("Currency: $currency")
 }
