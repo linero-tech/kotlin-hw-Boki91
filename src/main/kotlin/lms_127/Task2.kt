@@ -8,3 +8,6 @@ fun task2() {
 
     print("Hello $name, you are from $country and you were born in $month")
 }
+fun main() {
+    task2()
+}
