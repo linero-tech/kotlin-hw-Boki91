@@ -1,6 +1,10 @@
 package lms_127
 
 fun task4(base: Double, height: Double): Double {
-
-    return TODO("Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword")
+    val result = base * height/2
+    return result
+}
+fun main() {
+    val answer = task4(5.0,10.0)
+    println(answer)
 }
