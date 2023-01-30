@@ -9,4 +9,3 @@ fun main() {
     val answer = task3(2.0)
     println(answer)
 }
-
