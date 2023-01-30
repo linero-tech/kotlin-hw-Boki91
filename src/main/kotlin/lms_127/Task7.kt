@@ -7,4 +7,4 @@ fun task7(sentence: String): Int {
 fun main() {
     val answer = task7("I love GBG")
     println(answer)
-} 
+}
