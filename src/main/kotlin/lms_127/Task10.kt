@@ -11,7 +11,7 @@ fun task10_2(assessments: String): Char {
 }
 
 fun task10_3(assessments: String): Char {
-    val result = assessments.get(2)
+    val result = assessments.get(assessments.length/2)
     return result
 }
 
