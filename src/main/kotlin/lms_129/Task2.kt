@@ -2,5 +2,17 @@ package lms_129
 
 fun task2(number: Int): Boolean {
 
-    return TODO("Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword")
+    var result = true
+
+    for(i in 2 until number) {
+        if (number % i ==0) {
+           result=false
+        }
+    }
+
+    return result
+}
+fun main() {
+    val result = task2(2)
+    println(result)
 }
