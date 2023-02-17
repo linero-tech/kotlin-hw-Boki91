@@ -2,5 +2,16 @@ package lms_129
 
 fun task5(sentence: String): Int {
 
-    return TODO("Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword")
+    var result = 0
+
+    for (i in 0 until sentence.length) {
+        result = result + 1
+    }
+
+    return result
+}
+
+fun main () {
+    val result = task5("I love GBG")
+     println(result)
 }
