@@ -8,7 +8,7 @@ fun task1(a: Int, b: Int): Int {
        return result
     } else {
         for (i in a..b) {
-            result=result+i
+            result += i
         }
     }
 
