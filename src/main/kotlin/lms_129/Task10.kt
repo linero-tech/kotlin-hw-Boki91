@@ -6,12 +6,11 @@ import java.util.regex.Pattern
 fun task10(password: String): Boolean {
 
     val pattern: Pattern
-    val matcher: Matcher
 
-    val PASSWORD_PATTERN = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$]).{6,10}$"
+    val passwordPattern = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$]).{6,10}$"
 
-    pattern = Pattern.compile(PASSWORD_PATTERN)
-    matcher = pattern.matcher(password)
+    pattern = Pattern.compile(passwordPattern)
+    val matcher: Matcher = pattern.matcher(password)
 
     return matcher.matches()
 }
