@@ -4,9 +4,12 @@ fun task2(number: Int): Boolean {
 
     var result = true
 
-    for(i in 2 until number) {
-        if (number % i ==0) {
-           result=false
+    if (number < 2) {
+        result = false
+    }
+    for(i in 2 until  number) {
+        if (number % i == 0) {
+           result = false
         }
     }
 
