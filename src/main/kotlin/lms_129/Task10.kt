@@ -8,11 +8,11 @@ fun task10(password: String): Boolean {
     val pattern: Pattern
     val matcher: Matcher
 
-    val PASSWORD_PATTERN = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{4,}$"
+    val PASSWORD_PATTERN = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$]).{6,10}$"
 
     pattern = Pattern.compile(PASSWORD_PATTERN)
     matcher = pattern.matcher(password)
-    
+
     return matcher.matches()
 }
 
