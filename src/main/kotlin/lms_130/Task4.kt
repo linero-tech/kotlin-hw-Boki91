@@ -10,10 +10,10 @@ fun task4(items: List<Int>, factor: Int): List<Int> {
         }
     }
 
-    return result
+    return result.distinct().toList()
 }
 
 fun main () {
-    val result = task4(listOf(1, 2, 3, 4, 5, 6),2)
+    val result = task4(listOf(250, 50, 250, 50, 30),10)
     println(result)
 }
