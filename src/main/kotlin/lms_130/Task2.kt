@@ -22,7 +22,7 @@ fun task2(items: List<Int>): Int {
 
     items.forEachIndexed{index, number ->
        if (index % 2 == 0) {
-           result = result + number
+           result += number
        } else {
            0
        }
