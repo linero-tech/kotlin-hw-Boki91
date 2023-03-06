@@ -2,20 +2,20 @@ package lms_130
 
 fun task7(items: List<Int>): Int {
 
-    var result = 0
-    val smallValue = items.first()
+    var result = Int.MAX_VALUE
 
-    for (number in items) {
-
-        if (number < smallValue) {
-            result = number
-        }
+    for (i in items) {
+       result = result.coerceAtMost(i)
     }
 
-    return result
+    if (items.isEmpty()) {
+        result = 0
+    }
 
+
+    return result
 }
 fun main () {
-    val result = task7(listOf(10, 5, 11))
+    val result = task7(listOf<Int>(-100, -90, -100, 1, -2, 3))
     println(result)
 }
