@@ -28,14 +28,14 @@ fun task13_2(customers: List<String>): List<String> {
     var oneTime = mutableListOf<String>()
 
     customers.forEach { customer ->
-       if (customer in oneTime) {
-          result.add(customer)
+       if (customer !in oneTime) {
+          oneTime.add(customer)
        } else {
-           oneTime.add(customer)
+           result.add(customer)
        }
     }
 
-    return result.toList()
+    return result.toSet().toList()
 
 }
 
@@ -51,7 +51,7 @@ fun task13_3(customers: List<String>): List<String> {
     }
 
     return result.toList()
-    
+
 }
 
 fun main() {
