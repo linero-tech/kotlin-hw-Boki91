@@ -2,18 +2,33 @@ package lms_130
 
 fun task11_1(guests: List<String>): Int {
 
-    return TODO("Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword")
+    return if (guests.isEmpty()) {
+         0
+    } else {
+        guests.size
+    }
 }
+
 
 fun task11_2(guests: List<String>, condition: String): List<String> {
 
-    return TODO("Replace this 'TODO' with the variable 'result'. Do not erase the 'return' keyword")
+    var result = mutableListOf<String>()
+
+    guests.forEach { element ->
+        val guestCondition = "-${element.last()}"
+
+        if (guestCondition == condition) {
+           result.add(element)
+        }
+    }
+        return result.toList()
+
 }
 
 fun main() {
 
     // Change the condition to either "-V", "-A", or "-K" to test your code under different conditions
-    val conditionOfInterest = "-V"
+    val conditionOfInterest = "-A"
     val listOfAttendees = listOf(
         "Stéphanie-A",
         "Edmée-K",
